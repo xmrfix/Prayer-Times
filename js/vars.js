@@ -5,6 +5,7 @@
 	{ id: 'FranceUOIFAngle12', name: 'France UOIF - 12° Angle', params: { fajr: 12, isha: 12 }, methodOffsets: {} },
 	{ id: 'ISNA', name: 'Islamic Society of North America (ISNA)', params: { fajr: 15, isha: 15 }, methodOffsets: {} },
 	{ id: 'JAKIM', name: 'Jabatan Kemajuan Islam Malaysia', params: { fajr: 20, isha: 18 }, methodOffsets: {} },
+	{ id: 'Jordan', name: 'Jordan Ministry of Awqaf', params: { fajr: 18, isha: 18 }, methodOffsets: { maghrib: 5 } },
 	{ id: 'KEMENAG', name: 'Kementrian Agama Indonesia', params: { fajr: 20, isha: 18 }, methodOffsets: {} },
 	{ id: 'Kuwait', name: 'Kuwait', params: { fajr: 18, isha: 17.5 }, methodOffsets: {} },
 	{ id: 'UIPTL', name: 'London Unified Islamic Prayer Timetable', params: { fajr: 12, isha: 12 }, methodOffsets: {} },
