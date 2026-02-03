@@ -429,7 +429,11 @@ const setFields = async () => {
     let topAddress = appData.settings.address.substring(0, topAddressMaxLen) + ((appData.settings.address.length > topAddressMaxLen) ? '…' : '');
     $('#addressMenuText').html(topAddress);
     $('.timeNowTitle').html(appData.timeNow).attr('title', 'Current Time in ' + appData.settings.timeZoneID);
-    $('#calculationMethod').val(appData.settings.calculationMethod);
+    const calculationMethodEl = document.getElementById('calculationMethod');
+    const isCalculationMethodActive = document.activeElement === calculationMethodEl;
+    if (!isCalculationMethodActive) {
+        $('#calculationMethod').val(appData.settings.calculationMethod);
+    }
 
     $('#fajrAngle').html(appData.i18n['fajrText'] + ' ' + appData.fajrAngle);
     $('#ishaAngle').html(appData.i18n['ishaText'] + ' ' + appData.ishaAngle);
@@ -504,16 +508,18 @@ const setFields = async () => {
         dispLang.appendChild(option);
     });
 
-    const calculationMethod = document.getElementById('calculationMethod');
-    calculationMethod.innerHTML = '';
-    methods.forEach(m => {
-        const option = document.createElement('option');
-        option.value = m.id;
-        option.textContent = m.name;
-        if (appData.settings.calculationMethod == m.id)
-            option.selected = true;
-        calculationMethod.appendChild(option);
-    });
+    if (!isCalculationMethodActive) {
+        const calculationMethod = document.getElementById('calculationMethod');
+        calculationMethod.innerHTML = '';
+        methods.forEach(m => {
+            const option = document.createElement('option');
+            option.value = m.id;
+            option.textContent = m.name;
+            if (appData.settings.calculationMethod == m.id)
+                option.selected = true;
+            calculationMethod.appendChild(option);
+        });
+    }
 
     $('#audioVolumeIcon').attr('src', 'images/audio-' + appData.settings.volume + '.png');
     $('#audioVolumeDiv').attr('title', 'Audio Volume: ' + appData.settings.volume);
