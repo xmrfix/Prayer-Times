@@ -40,6 +40,10 @@ body {
     user-select: none;
 }
 
+#clock.clock-large {
+    max-height: 235px;
+}
+
 .menu-img {
     padding: 5px;
     height: 27px;

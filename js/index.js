@@ -44,6 +44,14 @@ const runApp = async () => {
         $('.' + key).text(value);
     });
 
+    const isEnglish = appData.i18n.languageCode === 'en';
+    if (isEnglish)
+        $('#zakatLink').show();
+    else
+        $('#zakatLink').hide();
+
+    $('#clock').toggleClass('clock-large', !isEnglish);
+
     $('.vakitDiv').hide();
     for (let i = 0; i < appData.appVakits.length; i++) {
         let vakit = appData.appVakits[i].name.toLowerCase();
@@ -497,16 +505,19 @@ const setFields = async () => {
         }
     }
 
-    const dispLang = document.getElementById('displayLanguage');
-    dispLang.innerHTML = '';
-    languages.forEach(language => {
-        const option = document.createElement('option');
-        option.value = language.code;
-        option.textContent = language.name;
-        option.selected = appData.i18n.languageCode == language.code;
-        option.classList.add(`flag-${language.code}`)
-        dispLang.appendChild(option);
-    });
+    const dispLangEl = document.getElementById('displayLanguage');
+    const isDisplayLanguageActive = document.activeElement === dispLangEl;
+    if (!isDisplayLanguageActive) {
+        dispLangEl.innerHTML = '';
+        languages.forEach(language => {
+            const option = document.createElement('option');
+            option.value = language.code;
+            option.textContent = language.name;
+            option.selected = appData.i18n.languageCode == language.code;
+            option.classList.add(`flag-${language.code}`)
+            dispLangEl.appendChild(option);
+        });
+    }
 
     if (!isCalculationMethodActive) {
         const calculationMethod = document.getElementById('calculationMethod');
