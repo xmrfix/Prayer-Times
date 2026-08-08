@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "مواعيد الصلاة",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "تم النسخ",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "كتم صوت علامات التبويب أثناء الأذان",
     "description": ""
   }
 }

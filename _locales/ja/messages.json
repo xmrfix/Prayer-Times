@@ -146,5 +146,9 @@
   "copiedText": {
     "message": "コピーしました",
     "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "アザーン時にタブをミュート",
+    "description": ""
   }
 }

@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "기도 시간",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "복사됨",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "아잔 시 탭 음소거",
     "description": ""
   }
 }

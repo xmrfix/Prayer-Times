@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": " নামাজের সময় ক্রোম এক্সটেনশন ",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "অনুলিপি করা হয়েছে",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "আযানের সময় ট্যাব নিঃশব্দ করুন",
     "description": ""
   }
 }

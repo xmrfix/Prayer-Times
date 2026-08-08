@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Розширення Chrome Час молитви",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Скопійовано",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Глушити вкладки під час азану",
     "description": ""
   }
 }

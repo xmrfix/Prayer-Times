@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Modlitwa razy Chrome Extension",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Skopiowano",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Wycisz karty podczas Adhan",
     "description": ""
   }
 }

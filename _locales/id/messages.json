@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Waktu Sholat",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Disalin",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Bisukan Tab Saat Adzan",
     "description": ""
   }
 }

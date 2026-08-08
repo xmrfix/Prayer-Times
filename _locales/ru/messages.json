@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Время намазов",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Скопировано",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Глушить вкладки во время азана",
     "description": ""
   }
 }

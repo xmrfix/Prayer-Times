@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "اوقات نماز",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "کپی شد",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "بی‌صدا کردن برگه‌ها هنگام اذان",
     "description": ""
   }
 }

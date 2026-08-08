@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Horaires de prière",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Copié",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Mettre les onglets en sourdine pendant l'Adhan",
     "description": ""
   }
 }

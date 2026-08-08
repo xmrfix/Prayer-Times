@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Estensione per Chrome dei tempi di preghiera",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Copiato",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Disattiva audio schede durante l'Adhan",
     "description": ""
   }
 }

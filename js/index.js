@@ -211,6 +211,14 @@ $(function () {
         });
     });
 
+    $("#muteAllTabsToggle").click(function () {
+        chrome.storage.local.get(['appData'], function (result) {
+            appData = result.appData;
+            appData.settings.muteAllTabs = !appData.settings.muteAllTabs;
+            saveAppDataAndRefresh(appData);
+        });
+    });
+
     $(".iconButton").click(function (e) {
         chrome.storage.local.get(['appData'], function (result) {
             appData = result.appData;
@@ -461,6 +469,12 @@ const setFields = async () => {
         $('#hanafiAsrOn').show();
     else
         $('#hanafiAsrOff').show();
+
+    $('.muteAllTabsOption').hide();
+    if (appData.settings.muteAllTabs)
+        $('#muteAllTabsOn').show();
+    else
+        $('#muteAllTabsOff').show();
 
     $('.showImsakOption').hide();
     if (appData.settings.showImsak) {

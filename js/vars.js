@@ -1,4 +1,4 @@
-﻿const methods = [
+const methods = [
 	{ id: 'Algerian', name: 'Algerian Ministry of Religious Affairs', params: { fajr: 18, isha: 17 }, methodOffsets: {} },
 	{ id: 'Egypt', name: 'Egyptian General Authority of Survey', params: { fajr: 19.5, isha: 17.5 }, methodOffsets: {} },
 	{ id: 'FranceAngle18', name: 'France - 18° Angle', params: { fajr: 18, isha: 18 }, methodOffsets: {} },
@@ -82,5 +82,5 @@ const duhaendDefaultOffset = -10;
 
 const settingsCodeFields = ['address', 'calculationMethod', 'adhans', 'timeZoneID', 'lat', 'lng', 'areAdhansEnabled',
 	'adhans', 'vakitOffsets', 'timeFormat', 'showMidnight', 'showDuha', 'showImsak', 'hanafiAsr',
-	'desktopNotifications', 'volume'
+	'desktopNotifications', 'volume', 'muteAllTabs'
 ];

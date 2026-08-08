@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Muslimische Gebetszeiten",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Kopiert",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Tabs bei Adhan stummschalten",
     "description": ""
   }
 }

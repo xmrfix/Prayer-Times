@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "अज़ान के दौरान क्रोम एक्सटेंशन",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "कॉपी किया गया",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "अज़ान के समय टैब म्यूट करें",
     "description": ""
   }
 }

@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Tiempos de oración",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Copiado",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Silenciar pestañas durante el Adhan",
     "description": ""
   }
 }

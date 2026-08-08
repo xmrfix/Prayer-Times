@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Waktu Solat",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "Disalin",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Nyahbunyi Tab Semasa Azan",
     "description": ""
   }
 }

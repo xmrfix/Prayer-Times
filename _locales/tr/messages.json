@@ -146,5 +146,9 @@
   "copiedText": {
     "message": "Kopyalandı",
     "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Ezan Okunurken Sekmeleri Sessize Al",
+    "description": ""
   }
 }

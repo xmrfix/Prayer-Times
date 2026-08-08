@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "Prayer Times",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "copied!",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Mute Tabs On Adhan",
     "description": ""
   }
 }

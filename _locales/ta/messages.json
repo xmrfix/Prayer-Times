@@ -1,4 +1,4 @@
-﻿{
+{
   "name": {
     "message": "தொழுகை நேர - குரோம் நீட்டிப்பு",
     "description": ""
@@ -145,6 +145,10 @@
   },
   "copiedText": {
     "message": "நகலெடுக்கப்பட்டது",
+    "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "பாங்கு போது டேப்களை மியூட் செய்",
     "description": ""
   }
 }

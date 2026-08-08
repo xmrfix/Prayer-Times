@@ -146,5 +146,9 @@
   "copiedText": {
     "message": "Đã sao chép",
     "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Tắt tiếng thẻ khi đọc Adhan",
+    "description": ""
   }
 }

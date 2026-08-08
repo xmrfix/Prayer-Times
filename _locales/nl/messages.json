@@ -146,5 +146,9 @@
   "copiedText": {
     "message": "Gekopieerd",
     "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Tabbladen dempen tijdens Adhan",
+    "description": ""
   }
 }

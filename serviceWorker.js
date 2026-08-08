@@ -120,6 +120,7 @@ async function initUser(i18nValues, appData) {
                 showImsak: appData.showImsak,
                 showDuha: appData.showDuha,
                 showMidnight: appData.showMidnight,
+                muteAllTabs: appData.muteAllTabs,
                 volume: appData.volume,
                 hijriDateOffset: appData.hijriDateOffset
             };
@@ -138,6 +139,7 @@ async function initUser(i18nValues, appData) {
             delete appData.showImsak;
             delete appData.showDuha;
             delete appData.showMidnight;
+            delete appData.muteAllTabs;
             delete appData.volume;
             delete appData.hijriDateOffset;
 
@@ -153,6 +155,9 @@ async function initUser(i18nValues, appData) {
             }
             if (!appData.settings.hanafiAsr) {
                 appData.settings.hanafiAsr = false;
+            }
+            if (appData.settings.muteAllTabs === undefined) {
+                appData.settings.muteAllTabs = true;
             }
             if (!appData.settings.volume) {
                 appData.settings.volume = 5;
@@ -183,6 +188,7 @@ async function initUser(i18nValues, appData) {
                 showImsak: false,
                 showDuha: false,
                 showMidnight: false,
+                muteAllTabs: true,
                 volume: 5
             }
             let appData = {
@@ -215,6 +221,7 @@ async function initDefaultUser(i18nValues) {
     appData.settings.showMidnight = false;
     appData.settings.adhans = defaultAdhanSettings;
     appData.settings.areAdhansEnabled = false;
+    appData.settings.muteAllTabs = true;
     appData.settings.volume = 5;
     await chrome.storage.local.set({ 'appData': appData });
 }
@@ -821,8 +828,10 @@ async function callAdhan() {
             console.log('Already called for ' + callString);
         }
         else {
-            /* mute all browser tabs before playing the adhan */
-            await muteAllTabs();
+            /* mute all browser tabs before playing the adhan if enabled */
+            if (appData.settings.muteAllTabs !== false) {
+                await muteAllTabs();
+            }
             await chrome.storage.local.set({ 'adhanStatus': { lastCall: callString, isBeingCalled: true } });
             await createOffscreen();
             await chrome.runtime.sendMessage({ audioID: appData.currentVakitAdhanAudioID, volume: appData.settings.volume });

@@ -146,5 +146,9 @@
   "copiedText": {
     "message": "Kopierat",
     "description": ""
+  },
+  "muteAllTabsTitle": {
+    "message": "Tysta flikar vid Adhan",
+    "description": ""
   }
 }
